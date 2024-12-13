@@ -1,5 +1,15 @@
-# Slice and Join
+# String Mwethods,Slice, Join
 
+```python
+animals = "lions tigers and bears"
+animals.index("bears") # os 17
+
+animals = "lions tigers and bears"
+"horses" in animals #o/s true
+
+
+int("12345") + int("54321")
+```
 ### Extracting Subsets of Strings
 
 * **Slice**: Extract a subset of the original string.
