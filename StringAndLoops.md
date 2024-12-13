@@ -46,5 +46,43 @@ greetings = ["Hello", "world"]
 print(" ".join(greetings))  # Prints "Hello world"
 You can also concatenate a combination of strings and variables like in the following example.
 name = "Alice"
+```
+
+# for(),while() Loop
+
+* range(stop) # range(3) 0,1,2
+* range(start, stop) # range(2, 6)    2,3,4,5
+* range(start, stop, step) #The third item in the range() function parameters is the incremental step value
+
+```Python
+for x in range(7):    
+        print(x) #o/s 0 1 2 3 4 5 6
+for number in range(2,8):
+    print(number**2) # The loop should print 4, 9, 16, 25, 36, 49
+for x in range(7):
+    if x % 2 == 0:
+        print(x) # The loop should print 0, 2, 4, 6
+for n in range(1, 8, 6):  
+     print(n) 0/s 1 7
+for n in range(4, 15+1, 2):
+         print(n) 4 6 8 10 12 14
+```
+
+# As a list comprehension:
+```Python
+even_numbers = **[x for x in range(7) if x % 2 == 0]**
+print(even_numbers) # o/s [0, 2, 4, 6]
+```
+
+# While
+
+```Python
+x =   0
+while x < 5:
+    print("Not there yet, x=" + str(x))
+    x = x + 1
+print("x=" + str(x))
+```
+
 
 
