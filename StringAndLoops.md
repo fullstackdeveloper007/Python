@@ -99,9 +99,9 @@ text.strip()
 text.strip('-')
 
 # join()
-"...".join(["This", "is", "a", "phrase", "joined", "by", "triple", "dots"])
-O/s- This...is...a...phrase...joined...by...triple...dots
-"This is another example".split()
-O/s- ['This', 'is', 'another', 'example']
+* "...".join(["This", "is", "a", "phrase", "joined", "by", "triple", "dots"])
+* O/s- This...is...a...phrase...joined...by...triple...dots
+* "This is another example".split()
+* O/s- ['This', 'is', 'another', 'example']
 
 # int()
