@@ -94,5 +94,8 @@ while x < 5:
 print("x=" + str(x))
 ```
 
+#Strip()
+text.strip()
+
 
 
