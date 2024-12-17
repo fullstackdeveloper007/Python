@@ -58,7 +58,7 @@ You can also concatenate a combination of strings and variables like in the foll
 name = "Alice"
 ```
 
-# for(),while() Loop
+### for(),while() Loop
 
 * range(stop) # range(3) 0,1,2
 * range(start, stop) # range(2, 6)    2,3,4,5
@@ -78,13 +78,13 @@ for n in range(4, 15+1, 2):
          print(n) 4 6 8 10 12 14
 ```
 
-# As a list comprehension:
+### As a list comprehension:
 ```Python
 even_numbers = **[x for x in range(7) if x % 2 == 0]**
 print(even_numbers) # o/s [0, 2, 4, 6]
 ```
 
-# While
+### While
 
 ```Python
 x =   0
@@ -94,14 +94,68 @@ while x < 5:
 print("x=" + str(x))
 ```
 
-# Strip()
-text.strip()
+### Strip()
+text.strip() - lstrip(),rstrip() remove white space 
 text.strip('-')
 
-# join()
+### join()
 * "...".join(["This", "is", "a", "phrase", "joined", "by", "triple", "dots"])
 * O/s- This...is...a...phrase...joined...by...triple...dots
-* "This is another example".split()
-* O/s- ['This', 'is', 'another', 'example']
 
-# int()
+### Split()- 
+* It splits the string into list of string. by default it splits by white space however split char can be provided
+* "This is another example".split() O/s- ['This', 'is', 'another', 'example']
+
+### int()
+
+### count()
+* "This is a string.count("i") O/s 3- count of char occurence
+
+### endswith()
+"Forest".endswith("rest") O/s- True
+
+### isnumeric()
+* "Forest".isnumeric() O/s - False
+* "12345".isnumeric() O/s - False
+
+### int()
+* int("2222")
+
+### format() or f"{}"
+```Python
+name = "Manny"
+number = len(name) * 3
+print("Hello {}, your lucky number is {}".format(name, number))
+
+name = "John"
+age = 30
+print(f"Hello, my name is {name} and I am {age} years old.")
+
+price = 7.5
+with_tax = price * 1.09
+print(price, with_tax)
+print("Base price: ${:.2f}. With Tax: ${:.2f}".format(price, with_tax))
+```
+
+###  {:>3} 
+
+Format the value to be at least 3 characters wide.
+Right-align the value within that width.
+
+```Python
+for x in range(0, 101, 10):
+    print("{:>3} F".format(x))
+  0 F
+ 10 F
+ 20 F
+ 30 F
+ 40 F
+ 50 F
+ 60 F
+ 70 F
+ 80 F
+ 90 F
+100 F
+```
+
+
