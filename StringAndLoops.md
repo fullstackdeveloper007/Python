@@ -1,5 +1,6 @@
-# String Mwethods,Slice, Join
+# String Methods,Slice, Join
 
+### String commonly used function
 ```python
 animals = "lions tigers and bears"
 animals.index("bears") # os 17
@@ -9,7 +10,19 @@ animals = "lions tigers and bears"
 
 
 int("12345") + int("54321")
-```
+
+print("AaBbCcDdEe".lower())
+print("AaBbCcDdEe".upper())
+print("   Hello   ".lstrip())  # prints "Hello   "
+print("   Hello   ".rstrip())           # prints "   Hello"
+test = "How much wood would a woodchuck chuck"
+print(test.count("wood"))               # prints 2
+print("12345".isnumeric())              # prints True
+print("-123.45".isnumeric())            # prints False
+print("xyzzy".isalpha())                # prints True
+print(test.split())    # prints ['How', 'much', 'wood', 'would', 'a', 'woodchuck', 'chuck']
+print(test.replace("wood", "plastic"))  # prints "How much plastic would a plasticchuck chuck"```
+print("-".join(test.split()))           # prints "How-much-wood-would-a-woodchuck-chuck"
 ### Extracting Subsets of Strings
 
 * **Slice**: Extract a subset of the original string.
