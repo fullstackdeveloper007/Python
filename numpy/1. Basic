@@ -1,1 +1,10 @@
+.
+
+🔹 What is the Dot Product?
+The dot product (also called the scalar product) is an algebraic operation that takes two equal-length sequences of numbers (vectors) and returns a single number (a scalar).
+
+It measures:
+How aligned two vectors are.
+Used heavily in machine learning, physics, computer graphics, etc.
+
 
