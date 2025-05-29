@@ -1,4 +1,4 @@
-.
+## Matrix operation 
 
 🔹 What is the Dot Product?
 The dot product (also called the scalar product) is an algebraic operation that takes two equal-length sequences of numbers (vectors) and returns a single number (a scalar).
@@ -6,5 +6,22 @@ The dot product (also called the scalar product) is an algebraic operation that 
 It measures:
 How aligned two vectors are.
 Used heavily in machine learning, physics, computer graphics, etc.
+
+import numpy as np
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+dot_product = np.dot(a, b)
+print(dot_product)  # Output: 32
+#Explanation
+1∗4+2∗5+3∗6=4+10+18=32
+
+## Dot product with example of House price prediction 
+features=np.array([[200,3],[1800,2]]) # 200 sqt ft and 3 bedrooms, 1800 sqt ft and 2 bedrooms
+weights=np.array([150, 200])  # Weight for each feature (e.g., 150 price per square foot, price per bedroom)
+
+print(np.dot(features, weights))   # Dot product to get the predicted price (w1*x1+w2*x2) (200*150 + 3*200, 1800*150 + 2*200)
+#out # [  30600  3820400]
+
+
 
 
