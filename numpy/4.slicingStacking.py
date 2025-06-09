@@ -1,0 +1,19 @@
+
+` import numpy as np
+a= np.array([6,7,8,9,10])  # Creating a NumPy array with values from 6 to 10
+
+print(a[0:2])  # Output: [6 7] (slicing the first two elements)
+print(a[2:])  # Output: [8 9 10] (slicing from index 2 to the end)
+print(a[-1])  #  output: 10 (accessing the last element)
+print(a[-2:])  # Output: [9 10] (slicing the last two elements) `
+
+# Creating a 2D NumPy array
+`b=np.array([[1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]]
+           )  
+b[1,2]  # Output: 6 (accessing the element at row 1, column 2)
+b[2,0]  # Output: 7 (accessing the element at row 2, column 0)
+b[1, :]  # Output: [4 5 6] (accessing the entire row 1) 
+b[:, 1]  # Output: [2 5 8] (accessing the entire column 1)
+b[1:3, 1:3]  # Output: [[5 6] [8 9]] (slicing a subarray from row 1 to 2 and column 1 to 2)`
