@@ -1,0 +1,25 @@
+#Sales Data for quarter 1 (Matrix 1 )
+#Rows represent products and columns represent sales in different regions.
+import numpy as np
+sales_q1 = np.array([[100, 150, 200], [120, 180, 240], [130, 160, 210]])
+
+sales_q2 = np.array([[200, 300, 600], [340, 730, 870], [980, 120, 560]])
+
+sales_byproduct = sales_q1+sales_q2
+prices= np.array([[10, 15, 20], [12, 18, 24], [13, 16, 21]])
+
+q1_revenue = sales_q1 * prices
+q2_revenue = sales_q2 * prices
+
+discount=.2 #20 percent discount
+q1_discount=q1_revenue*(discount ) # Applying discount to the revenue
+
+q1_revenue= q1_revenue - q1_discount  # Adjusting revenue after discount
+
+## Dot product and cross product with example of House price prediction 
+features=np.array([[200,3],[1800,2]]) # 200 sqt ft and 3 bedrooms, 1800 sqt ft and 2 bedrooms
+weights=np.array([150, 200])  # Weight for each feature (e.g., 150 price per square foot, price per bedroom)
+
+print(np.dot(features, weights))   # Dot product to get the predicted price (200*150 + 3*200, 1800*150 + 2*200)
+#out # [  33000  2700000]
+cross_product = np.cross(features, weights)  # Cross product (not typically used in house price prediction)

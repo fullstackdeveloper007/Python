@@ -1,0 +1,74 @@
+import numpy as np
+
+#Two dimensional array
+rev_q1= np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(rev_q1.ndim)  # Output: 2 (2D array)
+print(rev_q1.shape)  # Output: (3, 3) (3 rows and 3 columns)\
+print(rev_q1.itemsize)  # Output: 4 (size of each element in bytes, for int32 it is 4 bytes)
+print(rev_q1.size)  # Output: 9 (total number of elements in the array)
+print(rev_q1)  # Output: 9 (total number of elements)
+#Accesing the numpy 2D array elements 
+print(rev_q1[2, 2])  # putput: 9 (element at row 2, column 2)
+rev_q1[2, 1] = 10  # Changing the value at row 2, column 1 to 10
+
+rev_q1= np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]],dtype=np.float64) # definig the data type to float64
+print("Data type of the array:", rev_q1.dtype)  # Output: 
+
+np.sort(rev_q1)  # Sorting the array
+print("Sorted array:\n", np.sort(rev_q1))  # Output: Sorted array
+
+np.sort(rev_q1,axis=None)  # Sorting the array
+
+np.zeros((3, 3))  # Creating a 3x3 array of zeros
+print("Array of zeros:\n", np.zeros((3, 3)))  # Output: Array of zeros
+
+np.ones((3, 4))  # Creating a 3x4 array of ones
+
+#
+np.arange(1, 10, 2)  # Creating an array with values from 1 to 9 with a step of 2
+print("Array with step of 2:\n", np.arange(1, 10, 2))  # Output: Array with step of 2
+
+np.linspace(10, 20, 10)  # Creating an array with 10 evenly spaced values between 10 and 20
+print("Array with evenly spaced values:\n", np.linspace(10, 20, 10))  # Output: Array with evenly spaced values
+
+
+# flatten and ravel examples
+arr = np.array([[1, 2], [3, 4]])
+
+# ravel: view
+r = arr.ravel()
+r[0] = 100
+print(arr)  # Might reflect change if ravel returned a view
+
+# flatten: copy
+arr2 = np.array([[1, 2], [3, 4]])
+f = arr2.flatten()
+f[0] = 100
+print(arr2)  # Unchanged, because flatten returns a copy
+
+#Reshape() example
+array=np.array([[1,2],[3,4],[5,6]])
+reshaped_array = array.reshape(2, 3)  # Reshaping a 1D array to a 2D array
+print(reshaped_array)  # Output: Reshaped array O/s [[1 2 3] [4 5 6]]
+
+# Min & Max Example
+print("Min",arr2.min())  # Finding the minimum value in the array
+print("Max",arr2.max())  # Finding the maximum value in the array
+
+# Suming elements in the array by row and column
+print(array.sum())  # Finding the sum of all elements in the array
+print("Sum Along Cloumn",array.sum(axis=0))  # Finding the sum along the columns
+print("Sum Along Row",array.sum(axis=1))  # Finding the sum along the rows
+
+#looping through the array
+for val in array:
+    print("Row=>",val)  # Output: [1 2] [3 4] [5 6]
+    
+#Sqrt function example
+print("Sqrt of array:", np.sqrt(array))  # Output: Square root of each element
+
+#Square function example
+print("Sqrt of array:", np.square(array))  # Output: Square root of each element
+
+# Standard deviation example
+print("Standard Deviation:", np.std(array))  # Output: Standard deviation of the array
