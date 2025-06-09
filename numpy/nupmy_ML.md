@@ -7,11 +7,12 @@ It measures:
 How aligned two vectors are.
 Used heavily in machine learning, physics, computer graphics, etc.
 
+`
 import numpy as np
 a = np.array([1, 2, 3])
 b = np.array([4, 5, 6])
 dot_product = np.dot(a, b)
-print(dot_product)  # Output: 32
+print(dot_product)  # Output: 32`
 #Explanation
 1∗4+2∗5+3∗6=4+10+18=32
 
